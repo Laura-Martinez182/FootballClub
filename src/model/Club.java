@@ -12,4 +12,40 @@ public class Club {
 	private Coach[][] offices = new Coach[6][6];
 	
 	
-	public Club(String clubName, int nit, String date, 
+	public Club(String clubName, int nit, String date) {
+			this.clubName = clubName;
+			this.nit = nit;
+			this.date = date;
+	}
+	
+	public String getClubName() {
+		return clubName;
+	}
+	
+	public void setClubName(String clubName) {
+		this.clubName = clubName;
+	}
+	
+	public int getNit() {
+		return nit;
+	}
+	
+	public void setNit(int nit) {
+		this.nit = nit;
+	}
+	
+	public String getDate() {
+		return date;
+	}
+	
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+
+
+
+
+
+
+}

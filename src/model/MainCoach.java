@@ -18,3 +18,23 @@ public class MainCoach extends Coach{
 	public void setTeamsInCharge(int teamsInCharge) {
 		this.teamsInCharge = teamsInCharge;
 	}
+	
+	public int getChampionships() {
+		return championships;
+	}
+	
+	public void setChampionships(int championships) {
+		this.championships = championships;
+	}
+	
+	public int getMarketPriceCoach() {
+		int marketPriceCoach == 0;
+		marketPriceCoach += (getsalary()*10) + (getExperience()*100) + (getChampionships()*50);
+		return marketPriceCoach;
+	}
+	
+	public int levelCoach() {
+		int levelCoach == 0;
+		levelCoach += 5 + (getChampionships()/10);
+		return levelCoach;
+	}

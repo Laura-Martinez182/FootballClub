@@ -4,7 +4,7 @@ public class Team {
 	private final static int SIZE_COACH = 1;
 	private final static int SIZE_ASSIS = 3;
 	private final static int SIZE_PLAYERS = 25;
-	
+	private final static int SIZE_LINEUPS = 5;
 	private String teamName;
 	private MainCoach[] coach;
 	private TecAssisstant[] assistant;
@@ -16,14 +16,14 @@ public class Team {
 		coach = new MainCoach[SIZE_COACH];
 		assistant = new TecAssisstant[SIZE_ASSIS];
 		players = new Player[SIZE_PLAYERS];
-		lineups = new Lineups[]; //MIRAR SI ESO ESTA BIEN 
+		lineups = new Lineups[SIZE_LINEUPS]; 
 	}
 	
 	public String getTeamName() {
 		return teamName;
 	}
 	
-	public void setTeamName (String teamName) {
+	public void setTeamName(String teamName) {
 		this.teamName = teamName;
 	}
 	
